@@ -1,0 +1,2 @@
+module KabobsHelper
+end

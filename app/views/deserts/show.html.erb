@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @desert.name %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @desert.cost %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @desert.image %>
+</p>
+
+<%= link_to 'Edit', edit_desert_path(@desert) %> |
+<%= link_to 'Back', deserts_path %>

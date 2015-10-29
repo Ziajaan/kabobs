@@ -1,0 +1,19 @@
+<h1>Desert Menue</h1>
+<div class="row">
+<% @deserts.each do |desert| %>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="<%= desert.image %>">
+      <div class="caption">
+        <h3><%= desert.name %></h3>
+        <h3>Cost: $<%= desert.cost %></h3>
+        <%= link_to "More Info", desert, class: "btn btn-default" %>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
+
+<br>
+
+<%= link_to 'New Desert', new_desert_path, class: "btn btn-primary" %>

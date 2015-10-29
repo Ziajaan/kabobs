@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @kabob.name %>
+</p>
+
+<p>
+  <strong>Sides:</strong>
+  <%= @kabob.sides %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @kabob.cost %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @kabob.image %>
+</p>
+
+<%= link_to 'Edit', edit_kabob_path(@kabob) %> |
+<%= link_to 'Back', kabobs_path %>

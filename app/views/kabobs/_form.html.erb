@@ -1,0 +1,33 @@
+<%= form_for(@kabob) do |f| %>
+  <% if @kabob.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@kabob.errors.count, "error") %> prohibited this kabob from being saved:</h2>
+
+      <ul>
+      <% @kabob.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :sides %><br>
+    <%= f.text_field :sides %>
+  </div>
+  <div class="field">
+    <%= f.label :cost %><br>
+    <%= f.number_field :cost %>
+  </div>
+  <div class="field">
+    <%= f.label :image %><br>
+    <%= f.text_field :image %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
